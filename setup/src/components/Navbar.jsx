@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from "../assets/logo.webp"
+import logo from "../assets/google.png"
 import "../styles/navbar.css"
+import icon from "../assets/icon.png"
 
 const Navbar = () => {
   return (
@@ -19,7 +20,8 @@ const Navbar = () => {
         <input placeholder='Search items..' />
         <div className='user'>
           {/* <img src="" /> */}
-          <p>Hi, User</p>
+          <img src={icon} className='icon' />
+          <p>Login User</p>
         </div>
       </div>
     </div>

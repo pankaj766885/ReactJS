@@ -1,0 +1,48 @@
+.todos_container {
+    padding: 100px;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 60px;
+    font-family: fantasy;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    font-family: fantasy;
+}
+
+.form button {
+    padding: 10px 20px;
+    font-family: fantasy;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    font-size: 30px;
+    color: antiquewhite
+}
+
+.form button:hover {
+    background-color: bisque;
+    color: black
+}

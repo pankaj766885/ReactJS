@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background:dimgrey;
+  color: #fff;
+  padding: 50px 70px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+  transition: all;
+
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  font-size: 48px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-left hr {
+  width: 180px;
+  border: 1px solid #888;
+  margin-bottom: 15px;
+}
+
+.footer-left h3 {
+  font-size: 34px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.privacy {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.footer-center {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-center h4 {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-center ul {
+  list-style: none;
+}
+
+.footer-center li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-center li:hover {
+  color: #f5c518;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.subscribe {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.subscribe input {
+  width: 180px;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.subscribe button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background: #777;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background: #bdbdbd;
+  color: #171d27;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #f5c518;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .subscribe {
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .copyright {
+    margin-top: 30px;
+  }
+}
