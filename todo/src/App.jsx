@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { CirclePlus, Delete } from "lucide-react"
 import "./App.css"
 
+// update todo
+// store and recover
+
 const App = () => {
   const [input, setInput] = useState("")
   const [todos, setTodos] = useState([])
@@ -21,9 +24,11 @@ const App = () => {
 
   return (
     <div className='App'>
-      <form onSubmit={handleSubmit} className='form'>
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
-        <button type='submit'>
+      <h1 className='todo'>TODO</h1>
+
+      <form  onSubmit={handleSubmit} >
+        <input className="inputbox"value={input} placeholder='Add a todo item...' onChange={(e) => setInput(e.target.value)} />
+        <button className='button'  type='submit'>
           <CirclePlus />
         </button>
       </form>
@@ -32,9 +37,9 @@ const App = () => {
         {todos.map((todo, index) => {
           return (
             <div key={index} className='todo_item'>
-              <input type='radio' />
-              <p>{todo}</p>
-              <Delete onClick={() => handleDelete(todo)}/>
+              <input type='checkbox' />
+              <p className='line'>{todo}</p>
+              <Delete className='delet' onClick={() => handleDelete(todo)}/>
             </div>
           )
         })}
